@@ -1,0 +1,75 @@
+{% extends "dashboard/base.html" %}
+<!DOCTYPE html>
+<html>
+{% block head %}
+
+<head>
+  <link rel="icon" type="image/png" href="st/og-image.png">
+  <title>SortableJS</title>
+  <!-- <link href="{{ url_for('dashboard.static', filename='css/theme.css') }}" rel="stylesheet" /> -->
+</head>
+
+{% endblock %}
+
+{% block content %}
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="container">
+              <div class="form-group"><br><br>
+                <label style="color:black;" for="exampleInputEmail1">Mission Name</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+              </div>
+              <div class="form-group">
+                <label style="color:black;" for="exampleFormControlTextarea2">Mission Description</label>
+                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label style="color:black;" for="exampleFormControlTextarea2">Telecommand List</label>
+                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
+              </div>
+
+
+
+
+              <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col" dir="rtl">
+                  <button type="button"  class="btn btn-primary" dir="rtl" name="button" id="mybtn">Cancel</button>
+
+                </div>
+
+              </div>
+
+
+</body>
+{% endblock %}
+{% block script %}
+<!-- Latest Sortable -->
+<script src="{{ url_for('dashboard.static', filename='js/Sortable.js') }}"></script>
+<script src="{{ url_for('dashboard.static', filename='js/prettify.js') }}"></script>
+<script src="{{ url_for('dashboard.static', filename='js/run_prettify.js') }}"></script>
+<script src="{{ url_for('dashboard.static', filename='js/app.js') }}"></script>
+<script>
+  document.getElementById("mybtn").onclick = function() {
+    myFunction()
+  };
+
+  /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+  function myFunction() {
+    $("#example4-right").empty();
+  }
+</script>
+{% endblock %}
+
+
+</html>

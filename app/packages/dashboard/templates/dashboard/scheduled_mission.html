@@ -1,0 +1,101 @@
+{% extends 'dashboard/base.html' %}
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default ">
+        <div class="panel-body">
+          <!-- <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button> -->
+          <label for="search">Scheduled Mission Handling</label><br>
+          <!-- Search form -->
+          <div class=" mb-4" style="color:black;">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </div><br> <br>
+          <a href="{{ url_for('dashboard.create_template') }}" type="button" class="btn btn-primary">Schedule Mission</a>
+          <a href="{{ url_for('dashboard.create_template') }}" type="button" class="btn btn-primary">Reschedule Mission</a>
+          <a href="{{ url_for('dashboard.create_template') }}" type="button" class="btn btn-primary">Delete Mission</a>
+          <a href="{{ url_for('dashboard.create_template') }}" type="button" class="btn btn-primary">Refresh</a>
+          <a href="{{ url_for('dashboard.create_template') }}" type="button" class="btn btn-primary">send to queue </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-check-inline">
+            <label class="form-check-label" style="margin:13px;">
+              <input type="checkbox" class="form-check-input" value="">Tehran
+            </label>
+            <label class="form-check-label"style="margin:13px;">
+              <input type="checkbox" class="form-check-input" value="">Tabriz
+            </label>
+            <label class="form-check-label" style="margin:13px;">
+              <input type="checkbox" class="form-check-input" value="" >Gheshm
+            </label>
+            <label class="form-check-label" style="margin:13px;">
+              <input type="checkbox" class="form-check-input" value="" >Mashhad
+            </label>
+            <label class="form-check-label" style="margin:13px;">
+              <input type="checkbox" class="form-check-input" value="" >Mission Transmitted
+            </label>
+            <label class="form-check-label" style="margin:13px;">
+              <input type="checkbox" class="form-check-input" value="" >Mission Executed
+            </label>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- <h4 class="title"><strong>Mission Template Handling</strong></h4> -->
+          <div class="card">
+            <div class="header">
+              <h5 class="title"><strong>Scheduled Template List</strong></h5>
+            </div>
+            <div class="content table-responsive table-half-width">
+              <table class="table table-hover table-striped">
+                <div class="panel" style="background-color:black;">
+                  <thead>
+                    <th style="color:black;"><b></b></th>
+                    <th style="color:black;"><b>Scheduled</b></th>
+                    <th style="color:black;"><b>MissionName</b></th>
+                    <th style="color:black;"><b>PassId</b></th>
+                    <th style="color:black;"><b>Date</b></th>
+                    <th style="color:black;"><b>Start Time</b></th>
+                    <th style="color:black;" ><b>End Time</b></th>
+                    <th style="color:black;"><b>Mission Order</b></th>
+                    <th style="color:black;"><b>Status</b></th>
+                    <th style="color:black;"><b>Execute Mode</b></th>
+                  </thead>
+                  <tbody>
+                    {% for mission in missions %}
+                    <tr href="#">
+                      <td>
+                         <a href="{{ url_for('dashboard.view_template') }}"><i class="fa fa-eye"></i></a>
+                         <a href="{{ url_for('dashboard.create_template') }}"><i class="fa fa-edit"></i></a>
+                         <a href="#"><i  class="fa fa-trash"  onclick="return confirm('Are you sure you want to Remove?');"></i></a>
+                       </td>
+                      <td>{{mission.TemplateMissionId}}</td>
+                      <td>{{mission.MissionName}}</td>
+                      <td>{{mission.SequenceId}}</td>
+                      <td>{{mission.UserId}}</td>
+                      <td>{{mission.Description}}</td>
+                      <td hidden>{{telecommands[mission.SequenceId] | telecommnad_display }}</td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </div>
+              </table>
+            </div>
+          </div>
+        </div><br><br><br>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+</script>
+{% endblock %}

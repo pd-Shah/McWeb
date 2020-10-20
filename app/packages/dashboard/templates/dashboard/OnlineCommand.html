@@ -1,0 +1,114 @@
+{% extends 'dashboard/base.html' %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="container " style="margin-left:350px;" >
+      <div class="row">
+      <div class="col-md-6">
+        <h3>Set Parameters</h3>
+        <div class="panel panel-default ">
+          <div class="panel-body">
+            <div class="row">
+              <label for="search" style="width:45%; margin-left:10px;">Time Tag</label><br>
+              <div class=" mb-4" style="color:black;">
+                <input class="form-control " type="text" style="width:45%; margin-left:10px;">
+              </div>
+
+              <br>
+
+              <label for="search" style="width:15%; margin-left:10px;">Group Id</label><br>
+              <div class=" mb-4" style="color:black;">
+                <input class="form-control" type="text" style="width:45%; margin-left:10px;">
+              </div><br>
+
+              <!-- Dropdown -->
+              <div class="form-group" style=" margin-left:10px; scroll:auto">
+                <label style="color:black;" for="exampleFormControlSelect1" style="width:45%; margin-left:10px;">Ack_Type</label>
+                <select class="form-control" id="exampleFormControlSelect1" style="width:45%; margin-left:10px;">
+                  <option value="all"> - - all - - </option>
+                  <option value=""></option>
+                </select>
+              </div><br>
+            </div>
+            <div class="col">
+
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" style="margin-left:10px;">
+              <label class="form-check-label" for="exampleCheck1">Active Insert</label>
+
+              <!-- Date Field -->
+              <input type="date" name="bday" style=" margin-left:10px; width:35%;"><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="form-group" style=" margin-left:10px; scroll:auto; width:75%;">
+      <label style="color:black;" for="exampleFormControlSelect1" style="width:45%; margin-left:10px;">PuS Service</label>
+      <select class="form-control" id="exampleFormControlSelect1" style="width:45%; margin-left:10px;">
+        <option value="all"> - - all - - </option>
+        <option value=""></option>
+      </select>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-6">
+      <label for=""></label>
+
+      <div id="example4-left" class="list-group col" style=" overflow: scroll; border:1px solid black; width:550px; height:250px;">
+        <div class="list-group-item"></div>
+
+      </div>
+      <input type="button" style="margin:auto;" name="" value="clear">
+      <input type="button" name="" value="Save">
+    </div>
+    <div class="col-md-6">
+      <label for="Description">Set Parameters</label>
+      <div id="example4-left" class="list-group col" style=" overflow: scroll; border:1px solid black; width:550px; height:250px;">
+
+        <div class="list-group-item"></div>
+
+      </div>
+      <input type="button" style="margin:auto;" name="" value="Send To Sat">
+      <input type="button" name="" value="Clear">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <h4 class="title"><strong></strong></h4>
+
+      <div id="example4-left" class="list-group col" style=" overflow: scroll; border:1px solid black; width:550px; height:250px;">
+
+        <div class="list-group-item"></div>
+
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="Description"> </label>
+      <div id="example4-left" class="list-group col" style=" overflow: scroll; border:1px solid black; width:550px; height:250px;">
+
+        <div class="list-group-item"></div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<script>
+
+
+</script>
+{% endblock %}

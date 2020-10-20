@@ -1,0 +1,95 @@
+{% extends 'dashboard/base.html' %}
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="panel panel-default ">
+        <div class="panel-body">
+          <a href="{{ url_for('dashboard.Mto') }}" type="button" class="btn btn-primary">Show All MTO</a><br><br>
+          <div class=" mb-4" style="color:black;">
+            <label for="search">Last Recieved MTO</label><br>
+            <input class="form-control" style="width:35%;" type="text" value="{{current_MTO}}">
+          </div><br> <br>
+          <label for="startdate">Date Time</label>
+          <input id="startdate" type="date" name="bday" style=" width:25%;"><br><br>
+        </div>
+      </div>
+      <div class="col">
+        <label for="panel" style="margin:auto; margin-left:650px;">Set MTO </label><br><br>
+        <div class="panel" id="panel" style="margin:auto;  width:50%;">
+          <label for="startdate">Date Time</label>
+          <input id="startdate" type="date" name="bday" style=" margin-left:10px; width:35%;"><br><br>
+          <label for="search">Last Recieved MTO</label><br>
+          <input class="form-control" style="width:20%; " type="text">
+          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews">Real Time Show</label>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="title"><strong>List Of MTO</strong></h4>
+        <div class="card">
+          <!-- <div class="header">
+            <h5 class="title"><strong>Mission Template List</strong></h5>
+          </div> -->
+          <div class="content table-responsive table-half-width">
+            <table class="table table-hover table-striped">
+              <div class="panel" style="background-color:black;">
+                <thead>
+                  <th style="color:black;"><b></b></th>
+                  <th style="color:black;"><b>TMId</b></th>
+                  <th style="color:black;"><b>SourceName</b></th>
+                  <th style="color:black;"><b>DestinationName</b></th>
+                  <th style="color:black;"><b>ServiceId</b></th>
+                  <th style="color:black;"><b>SubServiceId</b></th>
+                  <th style="color:black;"><b>ReceiveTime</b></th>
+                  <th style="color:black;"><b>SampleTime</b></th>
+                  <th style="color:black;"><b>Rid</b></th>
+                  <th style="color:black;"><b>Desc2</b></th>
+                  <th style="color:black;"><b>TcpackId</b></th>
+                  <th style="color:black;"><b>Pakseqcontrol</b></th>
+                  <th style="color:black;"><b>Failurecode</b></th>
+                  <th style="color:black;"><b>Desc1</b></th>
+                </thead>
+                <tbody>
+                  {% for data in data_source %}
+                  <tr href="#">
+                    <td>
+                      <a href="{{ url_for('dashboard.view_template') }}"><i class="fa fa-eye"></i></a>
+                      <a href="{{ url_for('dashboard.create_template') }}"><i class="fa fa-edit"></i></a>
+                      <a href="#"><i class="fa fa-trash" onclick="return confirm('Are you sure you want to Remove?');"></i></a>
+                    </td>
+                    <td>{{data.TMId}}</td>
+                    <td>{{data.SourceName}}</td>
+                    <td>{{data.DestinationName}}</td>
+                    <td>{{data.ServiceId}}</td>
+                    <td>{{data.SubServiceId}}</td>
+                    <td>{{data.ReceiveTime}}</td>
+                    <td>{{data.SampleTime}}</td>
+                    <td>{{data.Rid}}</td>
+                    <td>{{data.Desc2}}</td>
+                    <td>{{data.TcpackId}}</td>
+                    <td>{{data.Pakseqcontrol}}</td>
+                    <td>{{data.Failurecode}}</td>
+                    <td>{{data.Desc1}}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </div>
+            </table>
+          </div>
+        </div>
+      </div><br><br><br>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+
+</script>
+{% endblock %}

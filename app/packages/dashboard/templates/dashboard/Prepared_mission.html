@@ -1,0 +1,71 @@
+{% extends 'dashboard/base.html' %}
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default ">
+        <div class="panel-body">
+          <!-- <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button> -->
+          <label for="search">Search MissionName</label><br>
+          <!-- Search form -->
+          <div class=" mb-4" style="color:black;">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </div><br> <br>
+          <a href="{{ url_for('dashboard.create_template') }}" type="button" class="btn btn-primary">Create Prepared Mission</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h4 class="title"><strong>Mission Template Handling</strong></h4>
+          <div class="card">
+            <div class="header">
+              <h5 class="title"><strong>Mission Template List</strong></h5>
+            </div>
+            <div class="content table-responsive table-half-width">
+              <table class="table table-hover table-striped">
+                <div class="panel" style="background-color:black;">
+                  <thead>
+                    <th style="color:black;"><b></b></th>
+                    <th style="color:black;"><b>TemplateMissionID</b></th>
+                    <th style="color:black;"><b>MissionName</b></th>
+                    <th style="color:black;"><b>SequenceID</b></th>
+                    <th style="color:black;"><b>UserID</b></th>
+                    <th style="color:black;"><b>Description</b></th>
+                    <th style="color:black;" hidden><b>telecommandsSequence</b></th>
+                  </thead>
+                  <tbody>
+                    {% for mission in missions %}
+                    <tr href="#">
+                      <td>
+                         <a href="{{ url_for('dashboard.view_prepared_mission') }}"><i class="fa fa-eye"></i></a>
+                         <a href="{{ url_for('dashboard.edit_prepared_mission') }}"><i class="fa fa-edit"></i></a>
+                         <a href="#"><i  class="fa fa-trash"  onclick="return confirm('Are you sure you want to Remove?');"></i></a>
+                       </td>
+                      <td>{{mission.TemplateMissionId}}</td>
+                      <td>{{mission.MissionName}}</td>
+                      <td>{{mission.SequenceId}}</td>
+                      <td>{{mission.UserId}}</td>
+                      <td>{{mission.Description}}</td>
+                      <td hidden>{{telecommands[mission.SequenceId] | telecommnad_display }}</td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </div>
+              </table>
+            </div>
+          </div>
+        </div><br><br><br>
+        <div class="col-md-4">
+          <label for="Description">Sequence Details </label>
+          <textarea id="sequence-details" class="form-control rounded-0" rows="20"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+</script>
+{% endblock %}

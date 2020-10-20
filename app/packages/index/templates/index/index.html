@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="{{ url_for('index.static', filename='img/fav.png') }}">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>پژوهشگاه فضایی ایران</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="{{ url_for('index.static', filename='css/linearicons.css') }}">
+		<link rel="stylesheet" href="{{ url_for('index.static', filename='css/owl.carousel.css') }}">
+		<link rel="stylesheet" href="{{ url_for('index.static', filename='css/font-awesome.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('index.static', filename='css/animate.css') }}">
+		<link rel="stylesheet" href="{{ url_for('index.static', filename='css/bootstrap.css') }}">
+		<link rel="stylesheet" href="{{ url_for('index.static', filename='css/main.css') }}">
+	</head>
+	<body>
+		<div id="top"></div>
+		<!-- Start Header Area -->
+		<header class="default-header">
+			<div class="sticky-header">
+				<div class="container">
+					<div class="header-content d-flex justify-content-between align-items-center">
+						<div class="logo">
+							<a href="https://isrc.ac.ir" class="smooth"><img src="{{ url_for('index.static', filename='img/logo.png')}}" alt=""></a>
+						</div>
+						<div class="right-bar d-flex align-items-center">
+							<nav class="d-flex align-items-center">
+								<ul class="main-menu">
+
+									<a href="{{url_for('login.login')}}">ورود/ثبت نام</a>
+
+									<li><a href="#top">خانه</a></li>
+									<li><a href="#services">خدمات</a></li>
+									<li><a href="#protfolio">پورتفولیو</a></li>
+									<li><a href="#team">تیم</a></li>
+									<li><a href="#blog">بلاگ</a></li>
+									<li><a href="#contact">تماس با ما</a></li>
+								</ul>
+								<a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
+							</nav>
+							<div class="search relative">
+								<span class="lnr lnr-magnifier"></span>
+								<form action="#" class="search-field">
+									<input type="text" placeholder="Search here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search here'">
+									<button class="search-submit"><span class="lnr lnr-magnifier"></span></button>
+								</form>
+							</div>
+							<div class="header-social d-flex align-items-center">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End Header Area -->
+		<!-- Start Banner Area -->
+		<section class="banner-area relative">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row fullscreen justify-content-center align-items-center">
+					<div class="col-lg-8">
+						<div class="banner-content text-center">
+							<p class="text-uppercase text-white"> پروژه ماهواره پارس</p>
+							<h1 class="text-uppercase text-white">پژوهشگاه فضایی ایران</h1>
+							<a href="#" class="primary-btn banner-btn">Explore Us</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Banner Area -->
+		<!-- Start About Area -->
+		<section class="section-full gray-bg">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<div class="section-title text-center">
+							<p class="text-uppercase">درباره پروژه</p>
+							<h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+								 <b>wireless headset</b> telephone.</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<figure class="signle-service">
+							<img src="{{ url_for('index.static', filename='img/earth.jpeg') }}" class="img-fluid" alt="">
+							<figcaption class="text-center">
+								<h5 class="text-uppercase">ویژگی 1</h5>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+ </p>
+								<a href="#" class="primary-btn d-inline-flex align-items-center">Explore<span class="lnr lnr-arrow-right"></span></a>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4">
+						<figure class="signle-service">
+							<img src="{{ url_for('index.static', filename='img/earth.jpeg') }}" class="img-fluid" alt="">
+							<figcaption class="text-center">
+								<h5 class="text-uppercase">ویژگی دو </h5>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+ </p>
+								<a href="#" class="primary-btn d-inline-flex align-items-center">Explore<span class="lnr lnr-arrow-right"></span></a>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4">
+						<figure class="signle-service">
+							<img src="{{ url_for('index.static', filename='img/earth.jpeg') }}" class="img-fluid" alt="">
+							<figcaption class="text-center">
+								<h5 class="text-uppercase">ویژگی سه </h5>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+								</p>
+								<a href="#" class="primary-btn d-inline-flex align-items-center">Explore<span class="lnr lnr-arrow-right"></span></a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About Area -->
+		<!-- Start Product Area -->
+		<section id="services" class="title-bg section-full">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="product-area-title text-center">
+							<p class="text-white text-uppercase">چرا پروژه ما را انتخاب می کنید</p>
+							<h2 class="text-white h1">ضمانت بهترین محصول برای مجموعه شما
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-product">
+							<div class="icon">
+								<span class="lnr lnr-star"></span>
+							</div>
+							<div class="desc">
+								<h4>طراحی منحصر بفرد</h4>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می  امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+ </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-product">
+							<div class="icon">
+								<span class="lnr lnr-magic-wand"></span>
+							</div>
+							<div class="desc">
+								<h4>رابط کاربری مناسب</h4>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-product">
+							<div class="icon">
+								<span class="lnr lnr-sun"></span>
+							</div>
+							<div class="desc">
+								<h4>بهترین عملکرد</h4>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+ </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-product">
+							<div class="icon">
+								<span class="lnr lnr-layers"></span>
+							</div>
+							<div class="desc">
+								<h4>لایه های متفاون</h4>
+								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+ </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Product Area -->
+
+		<!-- Start shuffle Area -->
+		<section id="protfolio" class="section-full">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="product-area-title text-center">
+							<p class="text-uppercase">کارهای برجسته</p>
+							<h2 class="h1">اطمینان و امنیت را برایتان به ارمغان می آوریم</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="controls d-flex flex-wrap justify-content-center">
+					<a class="filter active" data-filter="all">همه</a>
+					<a class="filter" data-filter=".category-1">دسته بندی</a>
+					<a class="filter" data-filter=".category-2">شرکت ها</a>
+					<a class="filter" data-filter=".category-3">پروژه ها</a>
+					<a class="filter" data-filter=".category-4">موسسه ها</a>
+
+				</div>
+			</div>
+
+
+
+			<div id="filter-content" class="row no-gutters mt-70">
+				<div class="mix category-1 col-lg-3 col-md-4 col-sm-6 single-filter-content content-1" data-myorder="1">
+					<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
+						<p class="text-white">Image Manipulation</p>
+						<div class="line"></div>
+						<h5 class="text-white text-uppercase">Creative Tangerine</h5>
+					</div>
+				</div>
+				<div class="mix category-1 category-5 category-3 category-5 col-lg-3 col-md-4 col-sm-6 single-filter-content content-2" data-myorder="2">
+					<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
+						<p class="text-white">Image Manipulation</p>
+						<div class="line"></div>
+						<h5 class="text-white text-uppercase">Creative Tangerine</h5>
+					</div>
+				</div>
+				<div class="mix category-1 category-5 col-lg-3 col-md-4 col-sm-6 single-filter-content content-3" data-myorder="3">
+					<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
+						<p class="text-white">Image Manipulation</p>
+						<div class="line"></div>
+						<h5 class="text-white text-uppercase">Creative Tangerine</h5>
+					</div>
+				</div>
+				<div class="mix category-2 category-3 category-6 col-lg-3 col-md-4 col-sm-6 single-filter-content content-4" data-myorder="4">
+					<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
+						<p class="text-white">Image Manipulation</p>
+						<div class="line"></div>
+						<h5 class="text-white text-uppercase">Creative Tangerine</h5>
+					</div>
+				</div>
+				<div class="mix category-1 category-4 category-5 col-lg-3 col-md-4 col-sm-6 single-filter-content content-5" data-myorder="5">
+					<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
+						<p class="text-white">Image Manipulation</p>
+						<div class="line"></div>
+						<h5 class="text-white text-uppercase">Creative Tangerine</h5>
+					</div>
+				</div>
+				<div class="mix category-1 category-3 category-5 category-6 col-lg-3 col-md-4 col-sm-6 single-filter-content content-6" data-myorder="6">
+					<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
+						<p class="text-white">Image Manipulation</p>
+						<div class="line"></div>
+						<h5 class="text-white text-uppercase">Creative Tangerine</h5>
+					</div>
+				</div>
+				<div class="mix category-2 category-4 category-3 col-lg-3 col-md-4 col-sm-6 single-filter-content content-7" data-myorder="7">
+					<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
+						<p class="text-white">Image Manipulation</p>
+						<div class="line"></div>
+						<h5 class="text-white text-uppercase">Creative Tangerine</h5>
+					</div>
+				</div>
+				<div class="mix category-2 category-6 category-5 col-lg-3 col-md-4 col-sm-6 single-filter-content content-8" data-myorder="8">
+					<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
+						<p class="text-white">Image Manipulation</p>
+						<div class="line"></div>
+						<h5 class="text-white text-uppercase">Creative Tangerine</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End shuffle Area -->
+		<!-- Start Team member Area -->
+		<section id="team" class="pb-150">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="product-area-title text-center">
+							<p class="text-uppercase">اعضای تیم</p>
+							<h2 class="h1">اعضای تیم موفقیت و سرنوشت آن تیم را رقم می زنند</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-member">
+							<div class="thumb relative" style="background: url(img/t1.jpg);">
+								<div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+									<p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+									<div class="line"></div>
+									<div class="social d-flex align-items-center justify-content-center">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="desc text-center">
+								<h5 class="text-uppercase"><a href="#">علی علیپور</a></h5>
+								<p>مدیر پروژه</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-member">
+							<div class="thumb relative" style="background: url(img/t2.jpg);">
+								<div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+									<p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+									<div class="line"></div>
+									<div class="social d-flex align-items-center justify-content-center">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="desc text-center">
+								<h5 class="text-uppercase"><a href="#">پدرام شاه صفی</a></h5>
+								<p>برنامه نویس</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-member">
+							<div class="thumb relative" style="background: url(img/t3.jpg);">
+								<div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+									<p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+									<div class="line"></div>
+									<div class="social d-flex align-items-center justify-content-center">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="desc text-center">
+								<h5 class="text-uppercase"><a href="#">رضا رضایی</a></h5>
+								<p>کارشناس نرم افزار</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-member">
+							<div class="thumb relative" style="background: url(img/t4.jpg);">
+								<div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+									<p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+									<div class="line"></div>
+									<div class="social d-flex align-items-center justify-content-center">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="desc text-center">
+								<h5 class="text-uppercase"><a href="#">سارا رجب زاده</a></h5>
+								<p>مدیر ارشد </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Team member Area -->
+
+		<!-- Start Digital Studio -->
+		<section class="section-full studio-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="studio-content">
+							<p class="text-uppercase text-white"> آزمایشگاه ساخت ماهواره</p>
+							<h2 class="h1 text-white text-uppercase mb-20">در آزمایشگاه قطعات سخت افزاری مورد نیاز ساخته  شده است</h2>
+							<p class="text-white mb-30">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+</p>
+							<a href="#" class="primary-btn text-white d-inline-flex align-items-center">Start Business<span class="lnr lnr-arrow-right"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Digital Studio -->
+		<!-- Start Pricing Area -->
+		<!-- <section class="section-full">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="product-area-title text-center">
+							<p class="text-uppercase">Creative People</p>
+							<h2 class="h1">Team work builds trust and <br> trust builds growth</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="single-pricing-table">
+							<div class="top">
+								<div class="head text-center">
+									<span class="lnr lnr-shirt"></span><br>
+									<h5 class="text-white text-uppercase">Standard</h5>
+								</div>
+								<div class="package text-center">
+									<div class="price">£199</div>
+									<span class="text-white">Per month</span>
+								</div>
+							</div>
+
+							<div class="bottom text-center">
+								<ul class="feature text-center">
+									<li>2.5 GB Photos</li>
+									<li>Secure Online Transfer</li>
+									<li>Unlimited Styles</li>
+									<li>Customer Service</li>
+									<li>Manual Backup</li>
+								</ul>
+								<a href="#" class="primary-btn text-uppercase d-inline-flex align-items-center">Purchase<span class="lnr lnr-arrow-right"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-pricing-table">
+							<div class="top">
+								<div class="head text-center">
+									<span class="lnr lnr-shirt"></span><br>
+									<h5 class="text-white text-uppercase">Business</h5>
+								</div>
+								<div class="package text-center">
+									<div class="price">£399</div>
+									<span class="text-white">Per month</span>
+								</div>
+							</div>
+
+							<div class="bottom text-center">
+								<ul class="feature text-center">
+									<li>2.5 GB Photos</li>
+									<li>Secure Online Transfer</li>
+									<li>Unlimited Styles</li>
+									<li>Customer Service</li>
+									<li>Manual Backup</li>
+								</ul>
+								<a href="#" class="primary-btn text-uppercase d-inline-flex align-items-center">Purchase<span class="lnr lnr-arrow-right"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-pricing-table">
+							<div class="top">
+								<div class="head text-center">
+									<span class="lnr lnr-apartment"></span>
+									<h5 class="text-white text-uppercase">Ultimate</h5>
+								</div>
+								<div class="package text-center">
+									<div class="price">£499</div>
+									<span class="text-white">Per month</span>
+								</div>
+							</div>
+
+							<div class="bottom text-center">
+								<ul class="feature text-center">
+									<li>2.5 GB Photos</li>
+									<li>Secure Online Transfer</li>
+									<li>Unlimited Styles</li>
+									<li>Customer Service</li>
+									<li>Manual Backup</li>
+								</ul>
+								<a href="#" class="primary-btn text-uppercase d-inline-flex align-items-center">Purchase<span class="lnr lnr-arrow-right"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!-- End Pricing Area -->
+		<!-- Start Testimonial Area -->
+		<section class="section-full gray-bg">
+			<div class="container">
+				<div class="active-testimonial-carousel">
+					<div class="single-testimonial">
+						<img src="{{ url_for('index.static', filename='img/ts1.png') }}" class="img-circle" alt="">
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+ </p>
+						<div class="author text-center">
+							<h6 class="text-uppercase"><a href="#">سارا رجب زاده</a></h6>
+							<span>CEO at Google</span>
+						</div>
+					</div>
+					<div class="single-testimonial">
+						<img src="{{ url_for('index.static', filename='img/ts2.png') }}" class="img-circle" alt="">
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+ </p>
+						<div class="author text-center">
+							<h6 class="text-uppercase"><a href="#">سارا رجب زاده</a></h6>
+							<span>CEO at Google</span>
+						</div>
+					</div>
+					<div class="single-testimonial">
+						<img src="{{ url_for('index.static', filename='img/ts3.png') }}" class="img-circle" alt="">
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+ </p>
+						<div class="author text-center">
+							<h6 class="text-uppercase"><a href="#">سارا رجب زاده</a></h6>
+							<span>CEO at Google</span>
+						</div>
+					</div>
+					<div class="single-testimonial">
+						<img src="{{ url_for('index.static', filename='img/ts3.png') }}"  class="img-circle" alt="">
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+</p>
+						<div class="author text-center">
+							<h6 class="text-uppercase"><a href="#">سارا رجب زاده</a></h6>
+							<span>CEO at Google</span>
+						</div>
+					</div>
+					<div class="single-testimonial">
+						<img src="{{ url_for('index.static', filename='img/ts3.png') }}"  class="img-circle" alt="">
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+</p>
+						<div class="author text-center">
+							<h6 class="text-uppercase"><a href="#">سارا رجب زاده</a></h6>
+							<span>CEO at Google</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Testimonial Area -->
+		<!-- Start Publish Area -->
+		<section id="blog" class="section-full">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="product-area-title text-center">
+							<p class="text-uppercase">آخرین اخبار</p>
+							<h2 class="h1">بلاگ </h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-publish">
+							<img src="{{ url_for('index.static', filename='img/p1.jpg') }}" class="img-fluid" alt="">
+							<div class="top">
+								<div class="mb-15 d-flex" dir="rtl">
+									<a href="#">مرداد12 سال 1398</a>
+									<span class="line">|</span>
+									<a href="#">نوشته شده توسط سارا رجب زاده</a>
+								</div>
+								<h6 class="text-uppercase" dir="rtl"><a href="#">آغاز  پرتاب ماهواره</a></h6>
+							</div>
+							<p class="mb-30" dir="rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+ </p>
+							<a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="single-publish">
+							<img src="{{ url_for('index.static', filename='img/p2.jpg') }}" class="img-fluid" alt="">
+							<div class="top">
+								<div class="mb-15 d-flex">
+									<a href="#">مرداد12 سال 1398</a>
+									<span class="line">|</span>
+									<a href="#">نوشته شده توسط سارا رجب زاده</a>
+								</div>
+								<h6 class="text-uppercase" dir="rtl"><a href="#">آغاز  پرتاب ماهواره</a></h6>
+							</div>
+							<p class="mb-30" dir="rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+		</p>							<a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="single-publish">
+							<img src="{{ url_for('index.static', filename='img/p2.jpg') }}" class="img-fluid" alt="">
+							<div class="top">
+								<div class="mb-15 d-flex">
+									<a href="#">مرداد12 سال 1398</a>
+									<span class="line">|</span>
+									<a href="#">نوشته شده توسط سارا رجب زاده</a>
+								</div>
+								<h6 class="text-uppercase" dir="rtl"><a href="#">آغاز  پرتاب ماهواره</a></h6>
+							</div>
+							<p class="mb-30" dir="rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+		</p>							<a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="single-publish">
+							<img src="{{ url_for('index.static', filename='img/p2.jpg') }}" class="img-fluid" alt="">
+							<div class="top">
+								<div class="mb-15 d-flex">
+									<a href="#">مرداد12 سال 1398</a>
+									<span class="line">|</span>
+									<a href="#">نوشته شده توسط سارا رجب زاده</a>
+								</div>
+								<h6 class="text-uppercase" dir="rtl"><a href="#">آغاز  پرتاب ماهواره</a></h6>
+							</div>
+							<p class="mb-30" dir="rtl">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+		</p>							<a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Publish Area -->
+		<!-- Start Contact Area -->
+		<section id="contact" class="section-full gray-bg">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="product-area-title text-center">
+							<!-- <p class="text-uppercase">Latest From Blog</p> -->
+							<h2 class="h1">تماس با ما</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 mt-30">
+						<p>
+تهران،طرشت،بلوار شهید تیموری،نرسیده به بزرگراه شیخ فضل الله نوری،شماره ۱۸۲
+کد پستی : ۱۴۵۹۷۷۷۵۱۱</p>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="address mt-20">
+									<h6 class="text-uppercase mb-15">Physical Address</h6>
+									<p>
+تهران،طرشت،بلوار شهید تیموری،نرسیده به بزرگراه شیخ فضل الله نوری،شماره ۱۸۲
+کد پستی : ۱۴۵۹۷۷۷۵۱۱</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="address mt-20">
+									<h6 class="text-uppercase mb-15">تلفن</h6>
+									<a href="tel:0000"> 	تلفن : ۶۶۰۶۵۰۳۰ , ۶۶۰۶۵۰۴۴ , ۶۶۰۶۵۰۴۹ , ۶۶۰۶۵۰۶۸
+ 	نمابر : ۶۶۰۰۸۶۱۵</a> <br>
+									<a href="tel:0000"> 	تلفن : ۶۶۰۶۵۰۳۰ , ۶۶۰۶۵۰۴۴ , ۶۶۰۶۵۰۴۹ , ۶۶۰۶۵۰۶۸
+ 	نمابر : ۶۶۰۰۸۶۱۵</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 mt-30">
+						<form id="myForm" action="mail.php" method="post" class="contact-form" dir="rtl">
+							<div class="single-input color-2 mb-10">
+								<input type="text" name="fname" placeholder="نام" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'" required>
+							</div>
+							<div class="single-input color-2 mb-10">
+								<input type="email" name="email" placeholder="آدرس ایمیل" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required>
+							</div>
+							<div class="single-input color-2 mb-10">
+								<input type="text" name="subject" placeholder="موضوع" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'" required>
+							</div>
+
+							<div class="single-input color-2 mb-10">
+								<textarea name="message" placeholder="پیامتان را اینجا بنویسید" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type your message here...'" required></textarea>
+							</div>
+							<div class="d-flex justify-content-end" dir="rtl"><button class="mt-10 primary-btn d-inline-flex text-uppercase align-items-center" dir="rtl">بفرست<span class="lnr lnr-arrow-right"></span></button></div>
+							<div class="alert"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact Area -->
+
+		<footer class="section-full">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-footer-widget">
+							<h6 class="text-white text-uppercase mb-20">درباره پژوهشگاه</h6>
+							<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+ </p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-footer-widget">
+							<h6 class="text-white text-uppercase mb-20">پیوندها</h6>
+							<div class="d-flex">
+								<ul class="footer-nav">
+									<li><a href="#">خانه</a></li>
+									<li><a href="#">ویژگی ها</a></li>
+									<li><a href="#">خدمات</a></li>
+									<li><a href="#">پورتفولیو</a></li>
+								</ul>
+								<ul class="ml-30 footer-nav">
+									<li><a href="#">تیم</a></li>
+									<li><a href="#">بلاگ</a></li>
+									<li><a href="#">تماس با ما</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="single-footer-widget">
+							<h6 class="text-white text-uppercase mb-20">اطلاعیه</h6>
+							<p>برای دریافت اخبار بیشتر آدرس ایمیل خود را وارد نمایید</p>
+							<div id="mc_embed_signup">
+								<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative d-flex justify-content-center">
+									<input type="email" name="EMAIL" placeholder="آدرس ایمیل" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required>
+									<div style="position: absolute; left: -5000px;">
+										<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
+									</div>
+									<button type="submit" class="newsletter-btn" name="subscribe"><span class="lnr lnr-location"></span></button>
+									<div class="info"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="footer-bottom d-flex justify-content-between align-items-center">
+					<p class="footer-text m-0">Copyright &copy; 2017  |  All rights reserved to <a href="#">Datarc inc.</a> Designed by <a href="https://colorlib.com/wp">Colorlib</a>.</p>
+					<div class="footer-social d-flex align-items-center">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="{{ url_for('index.static', filename='js/vendor/jquery-2.2.4.min.js') }}"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="{{ url_for('index.static', filename='js/vendor/bootstrap.min.js') }}"></script>
+		<script src="{{ url_for('index.static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+		<script src="{{ url_for('index.static', filename='js/jquery.sticky.js') }}"></script>
+		<script src="{{ url_for('index.static', filename='js/jquery.sticky.js') }}"></script>
+		<script src="{{ url_for('index.static', filename='js/owl.carousel.min.js') }}"></script>
+		<script src="{{ url_for('index.static', filename='js/mixitup.min.js') }}"></script>
+		<script src="{{ url_for('index.static', filename='js/main.js') }}"></script>
+	</body>
+</html>

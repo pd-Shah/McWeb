@@ -1,0 +1,164 @@
+{% extends "dashboard/base.html" %}
+<!DOCTYPE html>
+<html>
+{% block head %}
+
+<head>
+  <link rel="icon" type="image/png" href="st/og-image.png">
+  <title>SortableJS</title>
+  <!-- <link href="{{ url_for('dashboard.static', filename='css/theme.css') }}" rel="stylesheet" /> -->
+</head>
+{% endblock %}
+{% block content %}
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+
+            <div class="container">
+              <form id="form" method="POST">
+                <div class="form-group"><br><br>
+                  <label style="color:black;" for="mission-name">Mission Name</label>
+                  <input name="mission-name" class="form-control" id="mission-name" required>
+                  <p style="color:red" id="mission-name-error"></p>
+                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
+                <div class="form-group">
+                  <label style="color:black;" for="mission-description">Mission Description</label>
+                  <textarea name="mission-description" class="form-control rounded-0" id="mission-description" rows="3"
+                    required> </textarea>
+                  <p style="color:red" id="mission-description-error"></p>
+
+                </div>
+                <div class="form-group">
+                  <label style="color:black;" for="exampleFormControlSelect1">Select PUS Service</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="all"> - - all - - </option>
+                    {% for pus in pus_list %}
+                    <option value="{{ pus.PUSId }}"> {{ pus.PUSName }} </option>
+                    {% endfor %}
+                  </select>
+                </div><br>
+                <div class="container">
+                  <div id="sorting-disabled" class="row">
+                    <div class="col-md-6">
+                      <h3 class="text-center"> Telecommand List</h3>
+                      <div id="example4-left" class="list-group col"
+                        style=" overflow: scroll; border:1px solid black; width:550px; height:250px;">
+                        {% for key, pus_telecommand in pus_telecommand_name_list.items() %}
+                        {% for telecommand in pus_telecommand %}
+                        <div class="list-group-item{{ key }}" title="drop me to Sequence">
+                          {{ telecommand.TelecommandName }}</div>
+                        {% endfor %}
+                        {% endfor %}
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <h3 class="text-center"> Sequence</h3>
+                      <div class="list-group col" id="example4-right" type="password"
+                        style="overflow: scroll; border:1px solid black; width:550px; height:250px;"
+                        name="telecommand_list" required> </div>
+                      <p style="color: red;" id="Telecommandlist-error"></p>
+                      <button type="button" name="button" class="btn" id="mybtn" style="width:550px;">Clear</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                  </div>
+                  <button type="button" class="btn btn-primary" name="button" id="mybtn">Cancel&Back</button>
+                  <button type="button" class="btn btn-primary submit" name="button" id="savebtn">Save</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+{% endblock %}
+{% block script %}
+<!-- Latest Sortable -->
+<script src="{{ url_for('dashboard.static', filename='js/Sortable.js') }}"></script>
+<script src="{{ url_for('dashboard.static', filename='js/prettify.js') }}"></script>
+<script src="{{ url_for('dashboard.static', filename='js/run_prettify.js') }}"></script>
+<script src="{{ url_for('dashboard.static', filename='js/app.js') }}"></script>
+<script>
+  $(document).ready(function () {
+    document.getElementById("mybtn").onclick = function () {
+      $("#example4-right").empty();
+    };
+    $('#savebtn').click(function () {
+
+      var mission_name = $.trim($("#mission-name").val());
+      var mission_description = $.trim($("#mission-description").val());
+      var Telecommandlist = [];
+      childrean = $('#example4-right').children();
+      childrean.each(function () {
+        Telecommandlist.push($.trim($(this).text()));
+      });
+      var createMission = {
+        mission_name: mission_name,
+        description: mission_description,
+        telecommands: Telecommandlist,
+      }
+      if (mission_name != "" && mission_description != "" && Telecommandlist != "") {
+        $.ajax({
+          type: 'post',
+          url: "/dashboard/insert-mission-template",
+          dataType: 'json',
+          contentType: "application/json; charset=utf-8",
+          data: JSON.stringify(createMission),
+          success: function (response) {
+            window.location.reload(true);
+          },
+          error: function (response) {
+            window.location.reload(true);
+          },
+        })
+      } else {
+        const errorMessage = "this field is required!"
+        const message = "checked."
+        if (mission_name == "") {
+          text = errorMessage;
+          $("#mission-name-error").css("color", "orange");
+        } else {
+          text = message;
+          $("#mission-name-error").css("color", "blue");
+        };
+        if (!(mission_description)) {
+          text1 = errorMessage;
+          $("#mission-description-error").css("color", "orange");
+        } else {
+          text1 = message;
+          $("#mission-description-error").css("color", "blue");
+        };
+        if (!(Telecommandlist)) {
+          text2 = errorMessage;
+          $("#Telecommandlist-error").css("color", "orange");
+        } else {
+          text2 = message;
+          $("#Telecommandlist-error").css("color", "blue");
+        }
+        $("#mission-name-error").html(text);
+        $("#mission-description-error").html(text1);
+        $("#Telecommandlist-error").html(text2);
+      }
+    });
+    (function () {
+      $('#exampleFormControlSelect1').change(function () {
+        if ($(this).val() == "all") {
+          $("#example4-left").children().show();
+        } else {
+          $("#example4-left").children().hide();
+          $("#example4-left").children().filter(".list-group-item" + $(this).val()).show();
+        }
+      });
+    })();
+  });
+</script>
+{% endblock %}
+
+</html>
